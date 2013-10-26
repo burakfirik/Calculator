@@ -24,7 +24,7 @@
 
 -(IBAction)multButtonTouched:(UIButton *)sender;
 
--(IBAction)DivButtonTouched:(UIButton *)sender;
+-(IBAction)divButtonTouched:(UIButton *)sender;
 
 -(IBAction)doneButtonTouched:(UIBarButtonItem *)sender;
 

@@ -66,6 +66,14 @@
     [field2 resignFirstResponder];
 }
 
+-(IBAction)divButtonTouched:(UIButton *)sender{
+    int output=[field1.text intValue]/[field2.text intValue];
+    self.result.text=[NSString stringWithFormat:@"%d",output];
+    [field1 resignFirstResponder];
+    [field2 resignFirstResponder];
+    
+}
+
 
 -(IBAction)doneButtonTouched:(UIBarButtonItem *)sender{
     [field1 resignFirstResponder];

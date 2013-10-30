@@ -20,6 +20,8 @@
 
 @property(nonatomic,strong) IBOutlet UILabel * result;
 
+@property (nonatomic, strong) IBOutlet UIDatePicker *myDatePicker;
+
 @property (strong, nonatomic)IBOutlet UIPickerView *myPicker;
 
 -(IBAction)addButtonTouched:(UIButton *)sender;

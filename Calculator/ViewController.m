@@ -19,8 +19,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     NSArray *array=[[NSArray alloc] initWithObjects:@"1",@"2",@"3",@"4",@"5" ,nil];
-    self.pickerDataSource=array;
+    self.pickerDataSource=[[NSMutableArray alloc] initWithObjects:array];
+    
+    NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd-MM-yyyy"];
+    NSString *strDate=[dateFormatter stringFromDate:[NSDate date]];
 
+    NSDate * _date=[dateFormatter dateFromString:strDate];
+    
+    [self.myDatePicker setDate:_date];
+    [self.myDatePicker setMinimumDate:_date];
+    [self.myDatePicker setMaximumDate:_date];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -95,14 +105,17 @@
 
 #pragma mark -
 #pragma mark UIPickerViewDelegate + DataSources
+//datasource
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
 }
 
+//datasource
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
 
     return [self.pickerDataSource count];
 }
+//data source
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     if(component==0){
         return [self.pickerDataSource objectAtIndex:row];
@@ -113,6 +126,7 @@
     return nil;
 }
 
+//did select row
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     
     NSLog(@"row selected us :@", [self.pickerDataSource objectAtIndex:row]);

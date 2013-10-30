@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "WebViewController.h"
+
 
 @interface ViewController ()
 
@@ -18,8 +20,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSArray *array=[[NSArray alloc] initWithObjects:@"1",@"2",@"3",@"4",@"5" ,nil];
-    self.pickerDataSource=[[NSMutableArray alloc] initWithObjects:array];
+
+    
     
     NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"dd-MM-yyyy"];
@@ -101,6 +103,13 @@
     [field1 resignFirstResponder];
     [field2 resignFirstResponder];
     
+}
+
+
+-(IBAction) googleIt:(UIButton *)sender{
+    
+    WebViewController *tempVC=[[WebViewController alloc]initWithNibName:@"WebViewController" bundle:nil];
+    [self presentViewController:tempVC animated:YES completion:nil];
 }
 
 #pragma mark -

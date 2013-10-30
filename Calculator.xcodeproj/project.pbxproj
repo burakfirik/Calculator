@@ -21,6 +21,8 @@
 		AE4594B7181B665A0024725D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE459499181B665A0024725D /* UIKit.framework */; };
 		AE4594BF181B665A0024725D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE4594BD181B665A0024725D /* InfoPlist.strings */; };
 		AE4594C1181B665A0024725D /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4594C0181B665A0024725D /* CalculatorTests.m */; };
+		AE7D92101820995100CAEDCB /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7D920E1820995100CAEDCB /* WebViewController.m */; };
+		AE7D92111820995100CAEDCB /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE7D920F1820995100CAEDCB /* WebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		AE4594BC181B665A0024725D /* CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		AE4594BE181B665A0024725D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE4594C0181B665A0024725D /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		AE7D920D1820995100CAEDCB /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		AE7D920E1820995100CAEDCB /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		AE7D920F1820995100CAEDCB /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,7 @@
 				AE4594A7181B665A0024725D /* Main.storyboard */,
 				AE4594AA181B665A0024725D /* ViewController.h */,
 				AE4594AB181B665A0024725D /* ViewController.m */,
+				AE7D92121820997600CAEDCB /* WebView */,
 				AE4594AD181B665A0024725D /* Images.xcassets */,
 				AE45949C181B665A0024725D /* Supporting Files */,
 			);
@@ -150,6 +156,16 @@
 				AE4594BD181B665A0024725D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE7D92121820997600CAEDCB /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				AE7D920D1820995100CAEDCB /* WebViewController.h */,
+				AE7D920F1820995100CAEDCB /* WebViewController.xib */,
+				AE7D920E1820995100CAEDCB /* WebViewController.m */,
+			);
+			name = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +247,7 @@
 				AE4594AE181B665A0024725D /* Images.xcassets in Resources */,
 				AE4594A0181B665A0024725D /* InfoPlist.strings in Resources */,
 				AE4594A9181B665A0024725D /* Main.storyboard in Resources */,
+				AE7D92111820995100CAEDCB /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +269,7 @@
 				AE4594AC181B665A0024725D /* ViewController.m in Sources */,
 				AE4594A6181B665A0024725D /* AppDelegate.m in Sources */,
 				AE4594A2181B665A0024725D /* main.m in Sources */,
+				AE7D92101820995100CAEDCB /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +478,7 @@
 				AE4594C6181B665A0024725D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE4594C7181B665A0024725D /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +487,7 @@
 				AE4594C9181B665A0024725D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -34,4 +34,6 @@
 
 -(IBAction)doneButtonTouched:(UIBarButtonItem *)sender;
 
+-(IBAction)googleIt:(UIButton *)sender;
+
 @end

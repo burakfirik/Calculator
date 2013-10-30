@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UITextFieldDelegate>{
+@interface ViewController : UIViewController<UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource>{
 
     IBOutlet UIToolbar *toolbar;
     IBOutlet UITextField *field1;
@@ -16,7 +16,11 @@
 
 }
 
+@property(strong, nonatomic)NSMutableArray *pickerDataSource ;
+
 @property(nonatomic,strong) IBOutlet UILabel * result;
+
+@property (strong, nonatomic)IBOutlet UIPickerView *myPicker;
 
 -(IBAction)addButtonTouched:(UIButton *)sender;
 

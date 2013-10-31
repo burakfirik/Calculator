@@ -27,6 +27,13 @@
 {
     [super viewDidLoad];
     
+    indicator=[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    indicator.center=self.myWebView.center;
+    [indicator startAnimating];
+    [indicator setHidesWhenStopped:YES];
+    [self.myWebView addSubview:indicator];
+    
+    
     NSString *urlString =@"https://www.google.com";
     NSURL *url=[NSURL URLWithString:urlString];
     NSURLRequest *request=[NSURLRequest requestWithURL:url];
@@ -45,7 +52,9 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
-
+    
+    [indicator startAnimating];
+    
     return YES;
 }
 
@@ -58,7 +67,7 @@
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
-
+    [indicator stopAnimating];
 }
 
 

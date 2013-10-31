@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebViewController : UIViewController
+@interface WebViewController : UIViewController<UIWebViewDelegate>{
+
+
+}
+
+@property (strong, nonatomic)IBOutlet UIWebView *myWebView;
+
+-(IBAction)backButton:(UIButton *)sender;
 
 @end

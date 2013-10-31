@@ -138,8 +138,10 @@
 //did select row
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     
-    NSLog(@"row selected us :@", [self.pickerDataSource objectAtIndex:row]);
+   // NSLog(@"row selected us :@", [self.pickerDataSource objectAtIndex:row]);
 }
+
+
 
 
 @end

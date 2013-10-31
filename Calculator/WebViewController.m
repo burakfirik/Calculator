@@ -35,4 +35,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)backButton:(UIButton *)sender{
+
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

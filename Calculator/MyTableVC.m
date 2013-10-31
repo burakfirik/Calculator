@@ -103,6 +103,9 @@
         [cell addSubview:switch1];
     }
     
+    cell.textLabel.text=[self.tableDataSource objectAtIndex:indexPath.row];
+    cell.detailTextLabel.text=[NSString stringWithFormat:@"%d",indexPath.row];
+    
     return cell;
 
 }

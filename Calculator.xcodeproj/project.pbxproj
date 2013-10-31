@@ -89,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE0F3D1018222581008A958E /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				AEB4D7591821E290001A3CA5 /* MyTableVC.h */,
+				AEB4D75A1821E290001A3CA5 /* MyTableVC.m */,
+				AEB4D75B1821E290001A3CA5 /* MyTableVC.xib */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
 		AE459489181B66590024725D = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +137,7 @@
 				AE4594A7181B665A0024725D /* Main.storyboard */,
 				AE4594AA181B665A0024725D /* ViewController.h */,
 				AE4594AB181B665A0024725D /* ViewController.m */,
+				AE0F3D1018222581008A958E /* TableView */,
 				AE7D92121820997600CAEDCB /* WebView */,
 				AE4594AD181B665A0024725D /* Images.xcassets */,
 				AE45949C181B665A0024725D /* Supporting Files */,
@@ -168,9 +179,6 @@
 			children = (
 				AE7D920D1820995100CAEDCB /* WebViewController.h */,
 				AE7D920F1820995100CAEDCB /* WebViewController.xib */,
-				AEB4D7591821E290001A3CA5 /* MyTableVC.h */,
-				AEB4D75A1821E290001A3CA5 /* MyTableVC.m */,
-				AEB4D75B1821E290001A3CA5 /* MyTableVC.xib */,
 				AE7D920E1820995100CAEDCB /* WebViewController.m */,
 			);
 			name = WebView;

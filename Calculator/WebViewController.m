@@ -26,6 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString *urlString =@"https://www.google.com";
+    NSURL *url=[NSURL URLWithString:urlString];
+    NSURLRequest *request=[NSURLRequest requestWithURL:url];
+    [self.myWebView loadRequest:request];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -39,5 +44,22 @@
 
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+
+    return YES;
+}
+
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+
+}
+
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+
+}
+
 
 @end

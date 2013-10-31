@@ -98,9 +98,11 @@
     if(cell==nil){
         cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
         
+        /*
         UISwitch *switch1=[[UISwitch alloc] initWithFrame:CGRectMake(200, 20,40, 20)];
         [switch1 addTarget:self action:@selector(switchCalled:)forControlEvents:UIControlEventValueChanged];
         [cell addSubview:switch1];
+         */
     }
     
     cell.textLabel.text=[self.tableDataSource objectAtIndex:indexPath.row];

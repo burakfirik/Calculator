@@ -23,6 +23,8 @@
 		AE4594C1181B665A0024725D /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4594C0181B665A0024725D /* CalculatorTests.m */; };
 		AE7D92101820995100CAEDCB /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7D920E1820995100CAEDCB /* WebViewController.m */; };
 		AE7D92111820995100CAEDCB /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE7D920F1820995100CAEDCB /* WebViewController.xib */; };
+		AEB4D75C1821E290001A3CA5 /* MyTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB4D75A1821E290001A3CA5 /* MyTableVC.m */; };
+		AEB4D75D1821E290001A3CA5 /* MyTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEB4D75B1821E290001A3CA5 /* MyTableVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		AE7D920D1820995100CAEDCB /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		AE7D920E1820995100CAEDCB /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		AE7D920F1820995100CAEDCB /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		AEB4D7591821E290001A3CA5 /* MyTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableVC.h; sourceTree = "<group>"; };
+		AEB4D75A1821E290001A3CA5 /* MyTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableVC.m; sourceTree = "<group>"; };
+		AEB4D75B1821E290001A3CA5 /* MyTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +168,9 @@
 			children = (
 				AE7D920D1820995100CAEDCB /* WebViewController.h */,
 				AE7D920F1820995100CAEDCB /* WebViewController.xib */,
+				AEB4D7591821E290001A3CA5 /* MyTableVC.h */,
+				AEB4D75A1821E290001A3CA5 /* MyTableVC.m */,
+				AEB4D75B1821E290001A3CA5 /* MyTableVC.xib */,
 				AE7D920E1820995100CAEDCB /* WebViewController.m */,
 			);
 			name = WebView;
@@ -247,6 +255,7 @@
 				AE4594AE181B665A0024725D /* Images.xcassets in Resources */,
 				AE4594A0181B665A0024725D /* InfoPlist.strings in Resources */,
 				AE4594A9181B665A0024725D /* Main.storyboard in Resources */,
+				AEB4D75D1821E290001A3CA5 /* MyTableVC.xib in Resources */,
 				AE7D92111820995100CAEDCB /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB4D75C1821E290001A3CA5 /* MyTableVC.m in Sources */,
 				AE4594AC181B665A0024725D /* ViewController.m in Sources */,
 				AE4594A6181B665A0024725D /* AppDelegate.m in Sources */,
 				AE4594A2181B665A0024725D /* main.m in Sources */,

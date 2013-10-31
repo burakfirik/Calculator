@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "WebViewController.h"
+#import "MyTableVC.h"
 
 
 @interface ViewController ()
@@ -108,8 +109,12 @@
 
 -(IBAction) googleIt:(UIButton *)sender{
     
-    WebViewController *tempVC=[[WebViewController alloc]initWithNibName:@"WebViewController" bundle:nil];
-    [self presentViewController:tempVC animated:YES completion:nil];
+    
+    //WebViewController *tempVC=[[WebViewController alloc]initWithNibName:@"WebViewController" bundle:nil];
+    //[self presentViewController:tempVC animated:YES completion:nil];
+    
+    MyTableVC *tempTV=[[MyTableVC alloc] init];
+    [self presentViewController:tempTV animated:YES completion:nil];
 }
 
 #pragma mark -
